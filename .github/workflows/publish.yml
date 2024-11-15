@@ -1,9 +1,9 @@
-name: release
+name: Publish
 
 on:
   push:
     tags:
-      - 'v*'
+      - v*
 
 jobs:
   publish:
