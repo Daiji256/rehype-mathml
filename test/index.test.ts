@@ -180,21 +180,21 @@ test('@daiji256/rehype-mathml', async (t) => {
     );
   });
 
-  await t.test('should support `strict: ignore`', async () => {
+  await t.test('should support `strict: false`', async () => {
     assert.deepEqual(
       String(
         await unified()
           .use(rehypeParse, { fragment: true })
-          .use(rehypeMathML, { errorColor: 'orange' })
+          .use(rehypeMathML, { errorColor: 'orange', strict: false })
           .use(rehypeStringify)
-          .process('<span class="math-inline">&amp;</span>'),
+          .process('<span class="math-inline">ê&amp;</span>'),
       ),
       String(
         await unified()
           .use(rehypeParse, { fragment: true })
           .use(rehypeStringify)
           .process(
-            '<span class="temml-error" style="color:orange;white-space:pre-line;">&#x26;\nParseError:  Expected \'EOF\', got \'&#x26;\' at position 1: &#x26;̲</span>',
+            '<span class="temml-error" style="color:orange;white-space:pre-line;">ê&#x26;\nParseError:  Expected \'EOF\', got \'&#x26;\' at position 2: ê&#x26;̲</span>',
           ),
       ),
     );
