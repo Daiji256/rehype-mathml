@@ -1,0 +1,53 @@
+{
+  "name": "@daiji256/rehype-mathml",
+  "version": "1.0.0-beta.1",
+  "description": "rehype plugin to render math with MathML",
+  "keywords": [
+    "unified",
+    "markdown",
+    "rehype",
+    "rehype-plugin",
+    "plugin",
+    "html",
+    "temml",
+    "hast",
+    "latex",
+    "math",
+    "tex",
+    "mathml"
+  ],
+  "bugs": "https://github.com/Daiji256/rehype-mathml/issues",
+  "repository": "https://github.com/Daiji256/rehype-mathml/",
+  "license": "MIT",
+  "author": "Daiji256",
+  "type": "module",
+  "exports": "./dist/lib/index.js",
+  "main": "./dist/lib/index.js",
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build",
+    "format": "prettier . --write && eslint --fix .",
+    "lint": "prettier . --check && eslint .",
+    "test": "npm run build && node --test dist/test/index.test.js"
+  },
+  "dependencies": {
+    "hast-util-to-text": "^4.0.2",
+    "rehype-parse": "^9.0.1",
+    "temml": "^0.10.24",
+    "unified": "^11.0.5",
+    "unist-util-visit-parents": "^6.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@types/node": "^22.9.0",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "rehype-stringify": "^10.0.1",
+    "remark-math": "^6.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.1",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.13.0"
+  }
+}
