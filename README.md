@@ -1,7 +1,9 @@
 # @daiji256/rehype-mathml
 
-**[rehype][]** plugin to render math with MathML.
-This plugin converts LaTeX math to MathML using [temml][].
+**[rehype][]** plugin to render math with MathML by
+converting LaTeX math to MathML using temml.
+The reason for using [temml][] is that it is a lightweight library
+with a wide coverage of LaTeX functions.
 
 ## Contents
 
@@ -26,12 +28,14 @@ with [`remark-math`][remark-math] for a `$C$` syntax extension.
 
 ## When should I use this?
 
-This project is useful as it renders math with MathML at compile time, which
-means that there is no client side JavaScript needed.
+This project is useful as it renders math with MathML at compile time,
+which means that no client-side JavaScript or images are needed.
 
 This plugin is the MathML version of other plugins like
 [`rehype-mathjax`][rehype-mathjax] (renders with MathJax) and
 [`rehype-katex`][rehype-katex] (renders with KaTeX).
+With MathML, the HTML becomes simpler and lighter.
+Additionally, it supports the use of math fonts like [Noto Math][note-math].
 
 ## Install
 
@@ -151,5 +155,6 @@ It exports the additional type [`Options`](#options).
 [rehype-katex]: https://github.com/remarkjs/remark-math/tree/main/packages/rehype-katex
 [npm]: https://docs.npmjs.com/cli/install
 [typescript]: https://www.typescriptlang.org
+[note-math]: https://github.com/notofonts/math
 [license]: LICENSE
 [author]: https://github.com/Daiji256
