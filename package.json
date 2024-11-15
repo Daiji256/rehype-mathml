@@ -1,6 +1,6 @@
 {
   "name": "@daiji256/rehype-mathml",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "rehype plugin to render math with MathML",
   "keywords": [
     "unified",
@@ -23,6 +23,10 @@
   "type": "module",
   "exports": "./dist/lib/index.js",
   "main": "./dist/lib/index.js",
+  "files": [
+    "dist/lib",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc --build --clean && tsc --build",
     "format": "prettier . --write && eslint --fix .",
