@@ -23,6 +23,10 @@
   "type": "module",
   "exports": "./dist/lib/index.js",
   "main": "./dist/lib/index.js",
+  "files": [
+    "dist/lib",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc --build --clean && tsc --build",
     "format": "prettier . --write && eslint --fix .",
