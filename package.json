@@ -34,6 +34,7 @@
     "test": "npm run build && node --test dist/test/index.test.js"
   },
   "dependencies": {
+    "hast": "^1.0.0",
     "hast-util-from-html-isomorphic": "^2.0.0",
     "hast-util-to-text": "^4.0.2",
     "temml": "^0.10.24",
