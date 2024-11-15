@@ -3,8 +3,7 @@ import type { Plugin } from 'unified';
 import temml from 'temml';
 import { SKIP, visitParents } from 'unist-util-visit-parents';
 import { toText } from 'hast-util-to-text';
-import { unified } from 'unified';
-import rehypeParse from 'rehype-parse';
+import { fromHtmlIsomorphic } from 'hast-util-from-html-isomorphic';
 
 type Options = Partial<temml.Options>;
 
@@ -45,9 +44,7 @@ const rehypeMathML: Plugin<[Options?], Root> = (options) => {
           latex,
           Object.assign({}, options || {}, { displayMode: displayMode }),
         );
-        result = unified()
-          .use(rehypeParse, { fragment: true })
-          .parse(mathml).children;
+        result = fromHtmlIsomorphic(mathml, { fragment: true }).children;
       } catch (error) {
         result = [
           {
