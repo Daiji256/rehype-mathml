@@ -107,9 +107,9 @@ class with [MathML][].
 Configuration (TypeScript type).
 
 ```ts
-import temml from 'temml';
+import type { Options as TemmlOptions } from 'temml';
 
-type Options = Partial<temml.Options>;
+type Options = Partial<TemmlOptions>;
 ```
 
 See [_Options_ on `temml.org`][temml-options] for more info.

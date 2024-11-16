@@ -1,11 +1,12 @@
 import type { Root, RootContent } from 'hast';
 import type { Plugin } from 'unified';
 import temml from 'temml';
+import type { Options as TemmlOptions } from 'temml';
 import { SKIP, visitParents } from 'unist-util-visit-parents';
 import { toText } from 'hast-util-to-text';
 import { fromHtmlIsomorphic } from 'hast-util-from-html-isomorphic';
 
-type Options = Partial<temml.Options>;
+type Options = Partial<TemmlOptions>;
 
 const rehypeMathML: Plugin<[Options?], Root> = (options) => {
   return (tree) => {
