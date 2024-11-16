@@ -1,6 +1,6 @@
 {
   "name": "@daiji256/rehype-mathml",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "rehype plugin to render math with MathML",
   "keywords": [
     "unified",
@@ -34,10 +34,11 @@
     "test": "npm run build && node --test dist/test/index.test.js"
   },
   "dependencies": {
+    "hast": "^1.0.0",
     "hast-util-from-html-isomorphic": "^2.0.0",
-    "hast-util-to-text": "^4.0.2",
-    "temml": "^0.10.24",
-    "unified": "^11.0.5",
+    "hast-util-to-text": "^4.0.0",
+    "temml": "^0.10.0",
+    "unified": "^11.0.0",
     "unist-util-visit-parents": "^6.0.0"
   },
   "devDependencies": {
