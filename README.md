@@ -45,6 +45,8 @@ In Node.js (version 16+), install with [npm][]:
 npm install @daiji256/rehype-mathml
 ```
 
+To ensure proper rendering of mathematical expressions in every browser, you need to add [`Temml.woff2` and `Temml-*.css`][temml-dist].
+
 ## Use
 
 Say our document `input.html` contains:
@@ -148,6 +150,7 @@ It exports the additional type [`Options`](#options).
 [mathml]: https://www.w3.org/Math/
 [temml]: https://temml.org/
 [temml-options]: https://temml.org/docs/en/administration#options
+[temml-dist]: https://github.com/ronkok/Temml/tree/main/dist
 [unified]: https://github.com/unifiedjs/unified
 [rehype]: https://github.com/rehypejs/rehype
 [remark-math]: https://github.com/remarkjs/remark-math/tree/main/packages/remark-math
