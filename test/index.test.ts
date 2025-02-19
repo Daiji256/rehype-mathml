@@ -194,7 +194,7 @@ test('@daiji256/rehype-mathml', async (t) => {
           .use(rehypeParse, { fragment: true })
           .use(rehypeStringify)
           .process(
-            '<span class="temml-error" style="color:orange;white-space:pre-line;">ê&#x26;\nParseError:  Expected \'EOF\', got \'&#x26;\' at position 2: ê&#x26;̲</span>',
+            '<span class="temml-error" style="color:orange;white-space:pre-line;">ê&#x26;\n\nParseError:  Expected \'EOF\', got \'&#x26;\' at position 2: \nê&#x26;̲</span>',
           ),
       ),
     );
