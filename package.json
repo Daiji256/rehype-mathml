@@ -37,23 +37,23 @@
     "@types/hast": "^3.0.0",
     "hast-util-from-html-isomorphic": "^2.0.0",
     "hast-util-to-text": "^4.0.0",
-    "temml": "^0.10.0",
+    "temml": "^0.11.0",
     "unified": "^11.0.0",
     "unist-util-visit-parents": "^6.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.14.0",
-    "@types/node": "^22.9.0",
-    "eslint": "^9.14.0",
-    "eslint-config-prettier": "^9.1.0",
-    "globals": "^15.12.0",
-    "prettier": "^3.3.3",
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^22.13.4",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.1",
     "rehype-parse": "^9.0.1",
     "rehype-stringify": "^10.0.1",
     "remark-math": "^6.0.0",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.1",
-    "typescript": "^5.6.3",
-    "typescript-eslint": "^8.13.0"
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1"
   }
 }
