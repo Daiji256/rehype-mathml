@@ -1,6 +1,6 @@
 {
   "name": "@daiji256/rehype-mathml",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "rehype plugin to render math with MathML",
   "keywords": [
     "unified",
