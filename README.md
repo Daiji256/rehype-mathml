@@ -1,5 +1,8 @@
 # @daiji256/rehype-mathml
 
+[![npm version](https://img.shields.io/npm/v/@daiji256/rehype-mathml.svg)](https://www.npmjs.com/package/@daiji256/rehype-mathmle)
+[![npm downloads](https://img.shields.io/npm/dm/@daiji256/rehype-mathml.svg)](https://www.npmjs.com/package/@daiji256/rehype-mathml)
+
 **[rehype][]** plugin to render math with MathML by
 converting LaTeX math to MathML using temml.
 The reason for using [temml][] is that it is a lightweight library
