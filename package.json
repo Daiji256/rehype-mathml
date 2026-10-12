@@ -1,54 +1,54 @@
 {
-  "name": "@daiji256/rehype-mathml",
-  "version": "1.2.2",
-  "description": "rehype plugin to render math with MathML",
-  "keywords": [
-    "unified",
-    "markdown",
-    "rehype",
-    "rehype-plugin",
-    "plugin",
-    "html",
-    "temml",
-    "hast",
-    "latex",
-    "math",
-    "tex",
-    "mathml"
-  ],
-  "bugs": "https://github.com/Daiji256/rehype-mathml/issues",
-  "repository": "https://github.com/Daiji256/rehype-mathml/",
-  "license": "MIT",
-  "author": "Daiji256",
-  "type": "module",
-  "exports": "./dist/lib/index.js",
-  "main": "./dist/lib/index.js",
-  "files": [
-    "dist/lib",
-    "README.md"
-  ],
-  "scripts": {
-    "build": "tsc --build --clean && tsc --build",
-    "format": "biome check --write .",
-    "lint": "biome check .",
-    "test": "npm run build && node --test dist/test/index.test.js"
-  },
-  "dependencies": {
-    "@types/hast": "^3.0.0",
-    "hast-util-from-html-isomorphic": "^2.0.0",
-    "hast-util-to-text": "^4.0.0",
-    "temml": "^0.14.0",
-    "unified": "^11.0.0",
-    "unist-util-visit-parents": "^6.0.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.5.15",
-    "@types/node": "^26.6.5",
-    "rehype-parse": "^9.0.1",
-    "rehype-stringify": "^10.0.1",
-    "remark-math": "^6.0.0",
-    "remark-parse": "^11.0.0",
-    "remark-rehype": "^11.1.2",
-    "typescript": "^7.0.2"
-  }
+	"name": "@daiji256/rehype-mathml",
+	"version": "1.2.2",
+	"description": "rehype plugin to render math with MathML",
+	"keywords": [
+		"unified",
+		"markdown",
+		"rehype",
+		"rehype-plugin",
+		"plugin",
+		"html",
+		"temml",
+		"hast",
+		"latex",
+		"math",
+		"tex",
+		"mathml"
+	],
+	"bugs": "https://github.com/Daiji256/rehype-mathml/issues",
+	"repository": "https://github.com/Daiji256/rehype-mathml/",
+	"license": "MIT",
+	"author": "Daiji256",
+	"type": "module",
+	"exports": "./dist/lib/index.js",
+	"main": "./dist/lib/index.js",
+	"files": [
+		"dist/lib",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsc --build --clean && tsc --build",
+		"format": "biome check --write .",
+		"lint": "biome check .",
+		"test": "npm run build && node --test dist/test/index.test.js"
+	},
+	"dependencies": {
+		"@types/hast": "^3.0.0",
+		"hast-util-from-html-isomorphic": "^2.0.0",
+		"hast-util-to-text": "^4.0.0",
+		"temml": "^0.14.0",
+		"unified": "^11.0.0",
+		"unist-util-visit-parents": "^6.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.15",
+		"@types/node": "^26.6.5",
+		"rehype-parse": "^9.0.1",
+		"rehype-stringify": "^10.0.1",
+		"remark-math": "^6.0.0",
+		"remark-parse": "^11.0.0",
+		"remark-rehype": "^11.1.2",
+		"typescript": "^7.0.2"
+	}
 }
