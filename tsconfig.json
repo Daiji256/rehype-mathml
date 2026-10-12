@@ -8,7 +8,8 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node16",
     "rootDir": ".",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "types": ["node"]
   },
   "include": ["lib/**/*", "test/**/*"]
 }
