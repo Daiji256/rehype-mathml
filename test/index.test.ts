@@ -1,12 +1,12 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import temml from 'temml';
-import { unified } from 'unified';
 import rehypeParse from 'rehype-parse';
 import rehypeStringify from 'rehype-stringify';
 import remarkMath from 'remark-math';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
+import temml from 'temml';
+import { unified } from 'unified';
 import rehypeMathML from '../lib/index.js';
 
 test('@daiji256/rehype-mathml', async (t) => {
@@ -30,7 +30,7 @@ test('@daiji256/rehype-mathml', async (t) => {
             <div class="math-display">\\alpha</div>
             `
               .trim()
-              .replace(/  +/g, ''),
+              .replace(/ {2,}/g, ''),
           ),
       ),
       String(
@@ -44,7 +44,7 @@ test('@daiji256/rehype-mathml', async (t) => {
             ${temml.renderToString('\\alpha', { displayMode: true })}
             `
               .trim()
-              .replace(/  +/g, ''),
+              .replace(/ {2,}/g, ''),
           ),
       ),
     );
@@ -65,7 +65,7 @@ test('@daiji256/rehype-mathml', async (t) => {
             \`\`\`
             `
               .trim()
-              .replace(/  +/g, ''),
+              .replace(/ {2,}/g, ''),
           ),
       ),
       String(
@@ -101,7 +101,7 @@ test('@daiji256/rehype-mathml', async (t) => {
             $$
             `
               .trim()
-              .replace(/  +/g, ''),
+              .replace(/ {2,}/g, ''),
           ),
       ),
       String(
@@ -115,7 +115,7 @@ test('@daiji256/rehype-mathml', async (t) => {
             ${temml.renderToString('\\alpha', { displayMode: true })}
             `
               .trim()
-              .replace(/  +/g, ''),
+              .replace(/ {2,}/g, ''),
           ),
       ),
     );
@@ -216,7 +216,7 @@ test('@daiji256/rehype-mathml', async (t) => {
             \\end{split}</div>
             `
               .trim()
-              .replace(/  +/g, ''),
+              .replace(/ {2,}/g, ''),
           ),
       ),
       String(
@@ -232,7 +232,7 @@ test('@daiji256/rehype-mathml', async (t) => {
               \\end{split}
               `
                 .trim()
-                .replace(/  +/g, ''),
+                .replace(/ {2,}/g, ''),
               { displayMode: true },
             ),
           ),
@@ -255,7 +255,7 @@ test('@daiji256/rehype-mathml', async (t) => {
             </span>
             `
               .trim()
-              .replace(/  +/g, ''),
+              .replace(/ {2,}/g, ''),
           ),
       ),
       String(
