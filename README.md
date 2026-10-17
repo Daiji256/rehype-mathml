@@ -56,9 +56,9 @@ Say our document `input.html` contains:
 
 ```html
 <p>
-  Lift(<code class="language-math">L</code>) can be determined by Lift
-  Coefficient (<code class="language-math">C_L</code>) like the following
-  equation.
+	Lift(<code class="language-math">L</code>) can be determined by Lift
+	Coefficient (<code class="language-math">C_L</code>) like the following
+	equation.
 </p>
 <pre><code class="language-math">
   L = \frac{1}{2} \rho v^2 S C_L
@@ -68,19 +68,19 @@ Say our document `input.html` contains:
 …and our module `example.js` contains:
 
 ```js
-import { unified } from 'unified';
-import rehypeParse from 'rehype-parse';
-import rehypeStringify from 'rehype-stringify';
-import rehypeMathML from '@daiji256/rehype-mathml';
-import { read, write } from 'to-vfile';
+import rehypeMathML from "@daiji256/rehype-mathml";
+import rehypeParse from "rehype-parse";
+import rehypeStringify from "rehype-stringify";
+import { read, write } from "to-vfile";
+import { unified } from "unified";
 
 const file = await unified()
-  .use(rehypeParse, { fragment: true })
-  .use(rehypeMathML)
-  .use(rehypeStringify)
-  .process(await read('input.html'));
+	.use(rehypeParse, { fragment: true })
+	.use(rehypeMathML)
+	.use(rehypeStringify)
+	.process(await read("input.html"));
 
-file.basename = 'output.html';
+file.basename = "output.html";
 await write(file);
 ```
 
@@ -88,9 +88,9 @@ await write(file);
 
 ```html
 <p>
-  Lift(<math><!--…--></math>) can be determined by Lift
-  Coefficient (<math><!--…--></math>) like the following
-  equation.
+	Lift(<math><!--…--></math>) can be determined by Lift
+	Coefficient (<math><!--…--></math>) like the following
+	equation.
 </p>
 <math display="block" class="tml-display" style="display:block math;"><!--…--></math>
 ```
@@ -112,7 +112,7 @@ class with [MathML][].
 Configuration (TypeScript type).
 
 ```ts
-import type { Options as TemmlOptions } from 'temml';
+import type { Options as TemmlOptions } from "temml";
 
 type Options = Partial<TemmlOptions>;
 ```
