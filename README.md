@@ -68,11 +68,11 @@ Say our document `input.html` contains:
 …and our module `example.js` contains:
 
 ```js
-import { unified } from "unified";
+import rehypeMathML from "@daiji256/rehype-mathml";
 import rehypeParse from "rehype-parse";
 import rehypeStringify from "rehype-stringify";
-import rehypeMathML from "@daiji256/rehype-mathml";
 import { read, write } from "to-vfile";
+import { unified } from "unified";
 
 const file = await unified()
 	.use(rehypeParse, { fragment: true })
