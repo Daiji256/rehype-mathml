@@ -1,6 +1,6 @@
 # @daiji256/rehype-mathml
 
-[![npm version](https://img.shields.io/npm/v/@daiji256/rehype-mathml.svg)](https://www.npmjs.com/package/@daiji256/rehype-mathmle)
+[![npm version](https://img.shields.io/npm/v/@daiji256/rehype-mathml.svg)](https://www.npmjs.com/package/@daiji256/rehype-mathml)
 [![npm downloads](https://img.shields.io/npm/dm/@daiji256/rehype-mathml.svg)](https://www.npmjs.com/package/@daiji256/rehype-mathml)
 
 **[rehype][]** plugin to render math with MathML by
